@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+  margin: 0;
+  height: 100vmin;
+  width: 150vmin;
+  margin-left: 2vw;
+  margin-top: 2vh;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+  width: 50%;
+  border: 1px solid black;
+  font-size: 10vmin;
+  }
+.flex-container>div{
+  margin: 0 10px 0px 10px;
+  overflow: hidden;
+}
+
+ #ele2 {
+  align-self: center;
+  font-size: 25vmin;
+}
+#ele3{
+  align-self: flex-end;
+  transform: rotate(180deg);
+}
+</style>
+</head>
+<body>
+    <div class="flex-container">
+      <div>
+        A
+        <div>&clubs;</div>
+      </div>
+      
+      <div id="ele2">&clubs;</div>
+      <div id="ele3">A
+        <div>&clubs;</div>
+      </div>
+    </div>
+</body>
+</html>
